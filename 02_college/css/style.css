@@ -28,7 +28,7 @@
 .nav3st { float:left; }
 .nav3st li { float:left; }
 .nav3st li a { display:block; line-height:55px; margin-left:22px; }
-		
+
 
 
 
@@ -42,15 +42,42 @@
 	padding:100px 0;
 }
 
-#contents .titleWrap { width:1200px; height:260px; background:violet; margin: 0 auto; margin-bottom:50px; }
+#contents { width: 100%; }
+
+#contents .titleWrap { width:1200px; height:260px; margin: 0 auto; }
+#contents .tit-name { float:left; }
+#contents .tit-name h1 { font-size:46px; color:#fff; font-weight:lighter; }
+#contents .tit-name h1 .pt-tit01 { font-weight:bold; font-size:60px; }
+#contents .tit-icon { float:right; margin-top:10px; }
+#contents .tit-icon a { float:left; margin-left:19px; }
+#contents .tit-icon p { color:#fff; text-align:center; font-size:14px; }
+
+
 #contents .container { width:1200px; margin:0 auto; background:#fff; }
+#contents .sliderWrap01 { width:100%; }
+#contents .sliderWrap01 .slider01 { margin:85px; float:left; }
+#contents .sliderWrap01 .slider01 h1 { font-weight:lighter; color:#1651b7; font-size:65px; margin-bottom:23px; }
+#contents .sliderWrap01 .slider01 .slid-title { font-weight:bold; }
+#contents .sliderWrap01 .slider01 a { background:#182c4d; font-size:14px; color:#fff; padding:13px 42px; }
+
 #contents .container > ul > li { float:left; width:25%; height:225px; }
 #contents .container > ul > li:nth-child(2n) { background:pink; }
-#contents .container > ul > li:nth-child(1) { width:75%; height:450px; background:gray; }
-#contents .container > ul > li:nth-child(2) { height:450px; }
-#contents .container > ul > li:nth-child(3) {  }
-#contents .container > ul > li:nth-child(4) {  }
-#contents .container > ul > li:nth-child(5) {  }
-#contents .container > ul > li:nth-child(6) { background:#ff5353; }
-#contents .container > ul > li:nth-child(7) {  }
-#contents .container > ul > li:nth-child(8) { width:75%; }
+
+#contents .container > ul > li:nth-child(1) { width:75%; height:450px; background:url(../images/배경02.jpg)no-repeat center; }
+#contents .sliderWrap02 { width:100%; }
+#contents .sliderWrap02 .slider02 { margin:80px 0 0 37px; color:#fff; }
+#contents .sliderWrap02 .slider02 h1 { font-size:37px; font-weight:lighter; }
+#contents .sliderWrap02 .slider02 p { font-size:17px; }
+#contents .sliderWrap02 .slider02 a { font-size:14px; color:#fff; }
+#contents .sliderWrap02 .slider02 .pt-tit02 { font-weight:bold; }
+#contents .sliderWrap02 .slider02 .it-tit { font-style:italic; }
+
+
+
+#contents .container > ul > li:nth-child(2) { height:450px; background:url(../images/배경03.jpg)no-repeat center; }
+#contents .container > ul > li:nth-child(3) { background:#00163b; }
+#contents .container > ul > li:nth-child(4) { background:#1651b7; }
+#contents .container > ul > li:nth-child(5) { background:#fff; }
+#contents .container > ul > li:nth-child(6) { background:url(../images/학교02.jpg)no-repeat center; }
+#contents .container > ul > li:nth-child(7) { background:url(../images/학교03.jpg)no-repeat right; }
+#contents .container > ul > li:nth-child(8) { width:75%; background:url(../images/도서관01.jpg)no-repeat center; }
