@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*header*/
+#header { width:100%; height:155px; }
+.header-wrap1st { width:100%; height:40px; background:#0044af }
+.header1st { width:1200px; margin:0 auto; }
+
+.nav1st { float:left; }
+.nav1st li { float:left; width:120px; text-align: center; margin-right:2px; }
+.nav1st li a { display:block; color:#fff; line-height:40px; }
+.nav1st li:first-child a { height:40px; background:#fff; color:#6c6c6c; }
+.nav1st li + li a { background:#00163b; height:40px; }
+
+.nav2st .m-icon { margin-top:12px; width:16px; height:16px; background:#fff; color:#f5f6fb; }
+.nav2st .m-icon a { color:#9b9b9b;  text-align: center; line-height:13px;}
+
+
+.nav2st { float:right; }
+.nav2st li { float:left; margin-right:10px; }
+.nav2st li:last-child { margin-right:0; }
+.nav2st li a { display:block; color:#fff; line-height:40px; }
+
+.header-wrap2st { width:1200px; margin:0 auto; padding:30px 0; }
+
+.logo { float:left; }
+
+.navwrap { float:right; }
+.nav3st { float:left; }
+.nav3st li { float:left; }
+.nav3st li a { display:block; line-height:55px; margin-left:22px; }
+		
+
+
+
+/*contents*/
+#contents {
+	height:1300px;
+	background-image: url(../images/bg_dot.gif), url(../images/main_bg.jpg);
+	background-repeat:repeat,no-repeat;
+	background-position:center;
+	background-size:auto,cover;
+	padding:100px 0;
+}
+
+#contents .titleWrap { width:1200px; height:260px; background:violet; margin: 0 auto; margin-bottom:50px; }
+#contents .container { width:1200px; margin:0 auto; background:#fff; }
+#contents .container > ul > li { float:left; width:25%; height:225px; }
+#contents .container > ul > li:nth-child(2n) { background:pink; }
+#contents .container > ul > li:nth-child(1) { width:75%; height:450px; background:gray; }
+#contents .container > ul > li:nth-child(2) { height:450px; }
+#contents .container > ul > li:nth-child(3) {  }
+#contents .container > ul > li:nth-child(4) {  }
+#contents .container > ul > li:nth-child(5) {  }
+#contents .container > ul > li:nth-child(6) { background:#ff5353; }
+#contents .container > ul > li:nth-child(7) {  }
+#contents .container > ul > li:nth-child(8) { width:75%; }

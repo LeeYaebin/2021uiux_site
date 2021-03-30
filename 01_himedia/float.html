@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* { margin:0; padding:0; }
+		li { list-style:none; }
+		a:link, a:visited{color:black; text-decoration:none; }
+		
+		.nav2 { width:1000px; margin:0 auto; }
+		.nav2 li { float:left; width:20%; background:pink; transition:0.5s; }
+		.nav2 li:hover { background:skyblue; }
+		.nav2 a { display:block; text-align:center; line-height:40px; }
+		
+		
+		.nav { width:1000px; margin:0 auto; }
+		.nav li { float:left; width:20%; background:skyblue; transition:0.3s; }
+		.nav li:hover { background:pink; }
+		.nav a { display:block; text-align:center; line-height:40px; }
+		
+		.clearfix:after { content:""; display:block; clear:both; }
+		
+	</style>
+</head>
+<body>
+<ul class="nav2 clearfix">
+	<li><a href="#">menu1</a></li>
+	<li><a href="#">menu2</a></li>
+	<li><a href="#">menu3</a></li>
+	<li><a href="#">menu4</a></li>
+	<li><a href="#">menu5</a></li>
+</ul>
+
+
+<ul class="nav clearfix">
+	<li><a href="#">menu1</a></li>
+	<li><a href="#">menu2</a></li>
+	<li><a href="#">menu3</a></li>
+	<li><a href="#">menu4</a></li>
+	<li><a href="#">menu5</a></li>
+</ul>
+
+
+</body>
+</html>
