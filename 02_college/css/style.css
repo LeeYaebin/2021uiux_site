@@ -1,5 +1,18 @@
 @charset "utf-8";
 
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+}
+
+.nextBtn, .prevBtn { position:absolute; transform:translateY(-50%); top:50%; cursor:pointer; }
+
+.nextBtn { right:0; }
+.prevBtn { left:0; }
+
+
 /*header*/
 #header { width:100%; height:155px; }
 .header-wrap1st { width:100%; height:40px; background:#0044af }
@@ -27,10 +40,10 @@
 .navwrap { float:right; }
 .nav3st { float:left; }
 .nav3st li { float:left; }
-.nav3st li a { display:block; line-height:55px; margin-left:22px; }
+.nav3st li a { display:block; line-height:55px;  margin-right:40px; }
 
 
-
+.pt10 { padding-top:10px; }
 
 /*contents*/
 #contents {
@@ -42,42 +55,112 @@
 	padding:100px 0;
 }
 
+/* contents */
 #contents { width: 100%; }
 
-#contents .titleWrap { width:1200px; height:260px; margin: 0 auto; }
+#contents .titleWrap { width:1200px; height:200px; margin: 0 auto; }
 #contents .tit-name { float:left; }
-#contents .tit-name h1 { font-size:46px; color:#fff; font-weight:lighter; }
+#contents .tit-name h1 { font-size:46px; line-height:65px; color:#fff; font-weight:lighter; }
 #contents .tit-name h1 .pt-tit01 { font-weight:bold; font-size:60px; }
 #contents .tit-icon { float:right; margin-top:10px; }
 #contents .tit-icon a { float:left; margin-left:19px; }
 #contents .tit-icon p { color:#fff; text-align:center; font-size:14px; }
 
-
 #contents .container { width:1200px; margin:0 auto; background:#fff; }
-#contents .sliderWrap01 { width:100%; }
-#contents .sliderWrap01 .slider01 { margin:85px; float:left; }
-#contents .sliderWrap01 .slider01 h1 { font-weight:lighter; color:#1651b7; font-size:65px; margin-bottom:23px; }
-#contents .sliderWrap01 .slider01 .slid-title { font-weight:bold; }
-#contents .sliderWrap01 .slider01 a { background:#182c4d; font-size:14px; color:#fff; padding:13px 42px; }
+
+#contents .container > ul > li:nth-child(1) { width:75%; height:450px; }
+#contents .container .sliderWrap01 { position:relative; }
+#contents .container .sliderWrap01 .txtWrap { position:absolute; width:400px; top:85px; left:85px; }
+#contents .container .sliderWrap01 .txtWrap h1 { font-size:65px; color:#1651b7; font-weight:normal; line-height:80px; margin-bottom:20px; }
+#contents .container .sliderWrap01 .tit-b { font-weight:bold; }
+#contents .container .sliderWrap01 .arrow { padding:14px 40px; text-align:center; background: #182c4d; color:#fff; position:absolute; }
+
+.sliderWrap01 .bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto { position: absolute; bottom: 45px; width: 100%; }
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.sliderWrap01 .bx-wrapper .bx-pager.bx-default-pager a:focus { background: #0144af; }
+
 
 #contents .container > ul > li { float:left; width:25%; height:225px; }
+
 #contents .container > ul > li:nth-child(2n) { background:pink; }
 
-#contents .container > ul > li:nth-child(1) { width:75%; height:450px; background:url(../images/배경02.jpg)no-repeat center; }
+#contents .container > ul > li:nth-child(2) { height:450px; background:url(../images/yellow.png), url(../images/배경03.jpg);
+																							background-repeat:no-repeat; background-position:center; background-size:cover; }
 #contents .sliderWrap02 { width:100%; }
 #contents .sliderWrap02 .slider02 { margin:80px 0 0 37px; color:#fff; }
 #contents .sliderWrap02 .slider02 h1 { font-size:37px; font-weight:lighter; }
 #contents .sliderWrap02 .slider02 p { font-size:17px; }
-#contents .sliderWrap02 .slider02 a { font-size:14px; color:#fff; }
+#contents .sliderWrap02 .slider02 .s-ul li:nth-child(2) { padding-bottom:37px; }
+#contents .sliderWrap02 .slider02 .s-ul li a { font-size:14px; color:#fff; background:#000; padding:13px 40px; opacity:0.5; border: 1px solid #fff; }
 #contents .sliderWrap02 .slider02 .pt-tit02 { font-weight:bold; }
 #contents .sliderWrap02 .slider02 .it-tit { font-style:italic; }
 
 
-
-#contents .container > ul > li:nth-child(2) { height:450px; background:url(../images/배경03.jpg)no-repeat center; }
 #contents .container > ul > li:nth-child(3) { background:#00163b; }
+#contents .container .slider03 h1{ color:#fff; font-size:23px; margin-left:18px; margin-top:28px; }
+#contents .container .slider03 li { padding-top:28px; padding-left:18px; float:left; text-align:center; margin-left:5px; }
+#contents .container .slider03 p { color:#fff; }
+
 #contents .container > ul > li:nth-child(4) { background:#1651b7; }
+#contents .container .slider04 li { padding:0 18px; }
+#contents .container .slider04 li h1 { padding:25px 0; border-bottom: 2px solid #fff; color:#fff; font-size:23px; }
+#contents .container .slider04 li img { margin-right:10px; }
+#contents .container .slider04 .list { color:#fff; font-size:12px; }
+#contents .container .slider04 .list li { margin-top:15px; }
+
+#contents .container .slider04 .date { float:right; }
+
 #contents .container > ul > li:nth-child(5) { background:#fff; }
-#contents .container > ul > li:nth-child(6) { background:url(../images/학교02.jpg)no-repeat center; }
-#contents .container > ul > li:nth-child(7) { background:url(../images/학교03.jpg)no-repeat right; }
-#contents .container > ul > li:nth-child(8) { width:75%; background:url(../images/도서관01.jpg)no-repeat center; }
+#contents .container .slider05 { padding:18px 24px;  }
+#contents .container .slider05 li h1 { color:#00173b; font-size:23px; padding-bottom:22px; }
+#contents .container .slider05 li { font-size:13px; }
+#contents .container .slider05 > li > img { float:left; margin-right:12px; }
+#contents .container .slider05-01 { float:right; padding:30px 0;}
+#contents .container .slider05-01 li { float:left; margin-left:3px;  }
+
+
+#contents .container > ul > li:nth-child(6) { background:url(../images/학교02.jpg) no-repeat center; position:relative; overflow: hidden;}
+#contents .container .slider06 { font-size:19px; width:100%; height:100%; background:rgba(0, 0,0,0.7); transition:0.5s; position:absolute; color:#fff; text-align: center;line-height: 50px; bottom:-170px;}
+#contents .container .cont06:hover .slider06 { bottom:0; }
+
+
+#contents .container > ul > li:nth-child(7) { background:url(../images/blue.png), url(../images/학교03.jpg);
+																							background-repeat:no-repeat; background-position:right; }
+#contents .container .slider07 { width:100%; height:100%; display:flex; justify-content:center; align-items:center; }
+#contents .container .slider07:hover .play { width:80px; height:80px; }
+
+
+#contents .container > ul > li:nth-child(8) { background:#fff; }
+#contents .container .sliderWrap03 { width:900px; height:225px; position:relative; }
+#contents .container .sliderWrpa03 .slider08 li img { width:100%; }
+#contents .container .sliderWrap03 .slider08 .txtWrap01 { position:absolute; top:36px; left:38px; }
+#contents .container .sliderWrap03 .slider08 .txtWrap01 > h2 { font-size:32px; color:#fd513d; font-weight:normal;}
+#contents .container .sliderWrap03 .slider08 .txtWrap01 > h1 { font-size:50px; color:#fd513d; font-weight:bold; padding-bottom:25px; }
+#contents .container .sliderWrap03 .slider08 .txtWrap01 > a { padding:10px 35px; color:#fff; background:#fd513d; border: 1px solid #fff; }
+
+.sliderWrap03 .bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto { position: absolute; top: 0; right: 10px; width: 170px; height: 50px; }
+
+.sliderWrap01 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.sliderWrap01 .bx-wrapper .bx-pager.bx-default-pager a.active,
+.sliderWrap01 .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: ##0144af; }
+
+.sliderWrap03 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.sliderWrap03 .bx-wrapper .bx-pager.bx-default-pager a.active,
+.sliderWrap03 .bx-wrapper .bx-pager.bx-default-pager a:focus {
+        background: #fd513d; }
+
+
+#footer { width:100%; height:167px; background:#fff; margin-top:65px; }
+#footer .ft-Wrap { width:600px; margin:0 auto; }
+#footer .ft-Wrap li { float:left; width:20%; position:relative; }
+#footer .ft-Wrap li:first-child { width:70px; }
+#footer .ft-Wrap li:after { content:""; position:absolute; width:1px; height:13px; background: #575757; top:15px; }
+#footer .ft-Wrap li:first-child:after { content:""; display:none; }
+#footer .ft-Wrap li a { display:block; line-height:42px; text-align:center; font-size:11px; color:#575757; }
+#footer .ft-Wrap p { font-size:13px; color:#888; letter-spacing:-1px;}
+#footer .ft-Wrap p:last-child { padding-top:10px; }
