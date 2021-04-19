@@ -46,6 +46,15 @@
   z-index:1;
 }
 
+.contents .cont-wrap .bal02 {
+  width: 350px;
+  position:absolute; right:100px; bottom:-30px; z-index:2;
+  animation-name:bal02;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  transition:2s;
+}
 
 fieldset {
   border:0 none;
@@ -84,6 +93,9 @@ legend { display:block; position:absolute; left:0; top:-9999px; }
   border: none;
 }
 
+.formWrap .active { background:#10a6e3; }
+
+
 .slideTab { position:absolute; top:0; left:0; }
 .slideTab a { display:block; line-height:75px; width:132px; padding-left:50px;  background:#005998; position: relative; transition:0.3s; }
 .slideTab a:hover { background:#10a6e3; }
@@ -92,7 +104,7 @@ legend { display:block; position:absolute; left:0; top:-9999px; }
 
 .contents .cont-wrap { width:978px; height:572px; }
 
-.contents .cont-wrap .font-wrap { float:right; margin-top:28px; margin-right:96px; }
+.contents .cont-wrap .font-wrap { float:right; margin-top:28px; margin-right:96px; z-index:1; }
 .contents .cont-wrap .font-wrap h1 { font-size:65px; }
 .contents .cont-wrap .font-wrap p  { font-size:27px; }
 
@@ -150,7 +162,7 @@ legend { display:block; position:absolute; left:0; top:-9999px; }
 .contents .container .star { color:#E2A101; }
 
 
-.hov_container { width:980px; margin:0 auto; position: relative; z-index:3; }
+.hov_container { width:980px; margin:0 auto; position: relative; z-index:1; }
 .hov_container li .cwrap {
   width:50px; height:50px;
   position:absolute;
@@ -160,7 +172,7 @@ legend { display:block; position:absolute; left:0; top:-9999px; }
   display:flex; justify-content:center; align-items:center;
   transition:0.6s;
   transform:translate(-50%,-50%);
-  z-index:2;
+  z-index:1;
 }
 .hov_container li .cwrap div {
   width:30px; height:4px; background:#fff;
@@ -190,12 +202,10 @@ legend { display:block; position:absolute; left:0; top:-9999px; }
   color:#fff;
   text-align:center;
   transition:0.3s;
-  z-index:2;
 }
 .hov_container li:hover .ft {
   background:rgba(0, 0, 0, 0.2);
   top:0;
-  z-index:2;
 }
 
 .formWrap .bx-wrapper {
@@ -226,14 +236,6 @@ body { position:relative; }
   animation-delay:0.5s;
 }
 
-.animat .bal02 {
-  position:absolute; right:550px; bottom:650px;
-  animation-name:bal02;
-  animation-duration:5s;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
-  transition:2s;
-}
 .animat .bal03 {
   position:absolute; right:100px; bottom:80px;
   animation-name:bal03;
