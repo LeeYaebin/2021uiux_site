@@ -1,0 +1,9 @@
+#header { width: 100%; height: 80px; background:#191919; }
+#header .headerWrap { width: 1184px;  margin:0 auto; }
+#header .headerWrap .logo { float:left; }
+#header .headerWrap .logo .imgLogo { width:97px; height: 85px; }
+
+#header .headerWrap .menuWrap { float:right; }
+#header .headerWrap .menuWrap .menu li { display:block; float:left; padding:0 25px; color:#fff; line-height:80px; }
+
+#header .headerWrap .menuWrap .suv-menu li { float:left; }
