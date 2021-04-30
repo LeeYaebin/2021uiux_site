@@ -72,9 +72,9 @@
 .content .contList>li:nth-child(3) { width: 50%; }
 .content .contList>li:nth-child(4) { background: #4A4E69 url(../images/Vector-1.png); background-repeat:no-repeat; background-position: 50% 71px; }
 .content .contList>li:nth-child(5) { background: #472D30 url(../images/vector-2.png); background-repeat:no-repeat; background-position: 50% 71px; }
-.content .contList>li:nth-child(6) { width: 50%; }
-.content .contList>li:nth-child(7) { height: 620px; }
-.content .contList>li:nth-child(8) { width: 50%; }
-.content .contList>li:nth-child(9) {  }
+.content .contList>li:nth-child(6) { width: 50%; background-image:url(../images/cont01.png); background-repeat:no-repeat; background-size:cover; }
+.content .contList>li:nth-child(7) { height: 620px; background-image:url(../images/cont02.png); background-repeat:no-repeat; background-size:cover; }
+.content .contList>li:nth-child(8) { width: 50%; background-image:url(../images/cont03.png); background-repeat:no-repeat; background-size:cover; }
+.content .contList>li:nth-child(9) { background-image:url(../images/img000.png); background-size:cover; background-repeat:no-repeat; }
 .content .contList>li:nth-child(10) { position: absolute;  left: 310px; bottom: 0; background: #284B63 url(../images/vector-3.png); background-repeat:no-repeat; background-position: 50% 71px; }
-.content .contList>li:nth-child(11) { position: absolute; width: 50%; width: 50%; right: 0; bottom: 0; }
+.content .contList>li:nth-child(11) { position: absolute; width: 50%; width: 50%; right: 0; bottom: 0; background-image:url(../images/cont04.png); background-repeat:no-repeat; background-size:cover; }
