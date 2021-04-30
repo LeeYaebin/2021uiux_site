@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@media screen and ( max-width:700px){
+  .content .contList { width: 100%; }
+  .content .contList>li { width: 50%; height: 310px !important; order:11 }
+
+  .content .contList>li:nth-child(1) {  }
+  .content .contList>li:nth-child(2) {  }
+  .content .contList>li:nth-child(3) { order:2 }
+  .content .contList>li:nth-child(4) {  }
+  .content .contList>li:nth-child(5) { order:3 }
+  .content .contList>li:nth-child(6) { order:1 }
+  .content .contList>li:nth-child(7) {  }
+  .content .contList>li:nth-child(8) {  }
+  .content .contList>li:nth-child(9) {  }
+  .content .contList>li:nth-child(10) { position: static; }
+  .content .contList>li:nth-child(11) { position: static; }

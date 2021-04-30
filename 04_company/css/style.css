@@ -4,6 +4,18 @@
 #header .headerWrap .logo .imgLogo { width:97px; height: 85px; }
 
 #header .headerWrap .menuWrap { float:right; }
-#header .headerWrap .menuWrap .menu li { display:block; float:left; padding:0 25px; color:#fff; line-height:80px; }
+#header .headerWrap .menuWrap .menu { float:left; }
+#header .headerWrap .menuWrap .menu li { display:block; float:left; padding:0 25px; color:#fff; line-height:80px; transition:0.3s;font-size:17px; }
+#header .headerWrap .menuWrap .menu li:hover { background:#363636; }
 
-#header .headerWrap .menuWrap .suv-menu li { float:left; }
+#header .headerWrap .menuWrap .suv-menu { float:right; }
+#header .headerWrap .menuWrap .suv-menu li {
+  float:left; color:#fff;
+  height:46px; width:46px;
+  border:1px solid #fff;
+  display:flex; justify-content:center; align-items:center;
+  margin-top:15px;
+}
+#header .headerWrap .menuWrap .suv-menu li:hover { background:#fff; color:#000; }
+
+#container { width: 100%; height: 3792px; }
