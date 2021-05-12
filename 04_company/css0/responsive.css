@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@media screen and ( max-width:700px){
+
+  #headerTop { width: 100%; top: 0; }
+  #headerTop .toggleMenu { display:block; }
+  #headerTop .logo a .img { margin-left:20px; }
+  .suv_menu { display:none; }
+
+  #main_menu {
+    position: fixed; width: 100%; height: 100%;
+    background:#fff; left: -100%; top: 0;
+   display:flex; justify-content:center; align-items:center;
+ }
+  .topNav { background: green; width: 50%; }
+  .topNav li { float: initial !important; text-align: center; }
+
+
+
+  .sliderWrap .slider_txt h3 { font-size:25px; margin-bottom:30px; }
+  .sliderWrap .slider_txt p { font-size:12px; }
+
+
+
+  .content .contList { top: 0px; }
+  .content .contList { width: 100%; }
+  .content .contList>li { width: 50%; .height: 310px !important; order:11 }
+
+
+
+  .content .contList>li:nth-child(1) { order:5; z-index:1; }
+  .content .contList>li:nth-child(2) { display:none; }
+  .content .contList>li:nth-child(3) { order:10; z-index:9; background-image:url(../images/dmz.JPG); background-size:cover; }
+  .content .contList>li:nth-child(4) { order:7; z-index:1; }
+  .content .contList>li:nth-child(5) { order:8; z-index:1; }
+  .content .contList>li:nth-child(6) { order:2; background-image:url(../images/mob02.png); background-size:cover; width: 100%; height:997px; }
+  .content .contList>li:nth-child(7) { order:1; background-image:url(../images/mob01.png); background-size:cover; width: 100%; height:997px; }
+  .content .contList>li:nth-child(8) { order:3; background-image:url(../images/mob03.png); background-size:cover; width: 100%; height:997px; }
+  .content .contList>li:nth-child(9) { order:6; z-index:1; }
+  .content .contList>li:nth-child(10) { order:9; position: static; z-index:1; }
+  .content .contList>li:nth-child(11) { order:4; background-image:url(../images/mob04.png); background-size:cover; width: 100%; height:997px; position:relative; }
+
+
+
+@media screen and (max-width:575px){
+  .sliderWrap .slider_txt h3 { font-size:20px; t0 margin-bottom:30px; }
+  .sliderWrap .slider_txt p { font-size:12px; }
+
+
+}
