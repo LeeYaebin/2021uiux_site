@@ -26,4 +26,11 @@ $(document).ready(function(){
     $("#main_menu").removeAttr("style");
     $(".toggleMenu").removeClass("change");
   });
+
+
+  $(".youtube").colorbox({
+    iframe:true,
+    innerWidth:1400,
+    innerHeight:393.75
+  });
 });
