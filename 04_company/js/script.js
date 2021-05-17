@@ -30,7 +30,7 @@ $(document).ready(function(){
 
   $(".youtube").colorbox({
     iframe:true,
-    innerWidth:1400,
+    innerWidth:700,
     innerHeight:393.75
   });
 });

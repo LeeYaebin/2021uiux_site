@@ -34,15 +34,15 @@
 
   .content .contList>li:nth-child(1) { order:1; }
   .content .contList>li:nth-child(2) { display:none; }
-  .content .contList>li:nth-child(3) { display:none; }
+  .content .contList>li:nth-child(3) { display: none; margin-top: 10px; }
   .content .contList>li:nth-child(4) { order:2;}
   .content .contList>li:nth-child(5) { order:3; }
-  .content .contList>li:nth-child(6) { display:none; }
-  .content .contList>li:nth-child(7) { display:none; }
-  .content .contList>li:nth-child(8) { display:none; }
+  .content .contList>li:nth-child(6) { order:7; width: 100%; display: block; margin-top: 10px; }
+  .content .contList>li:nth-child(7) { order:10; width: 100%; display: block; }
+  .content .contList>li:nth-child(8) { order:8; width: 100%; display: block; }
   .content .contList>li:nth-child(9) { order:4; }
-  .content .contList>li:nth-child(10) { order:5; left: 80%; }
-  .content .contList>li:nth-child(11) { display:none; }
+  .content .contList>li:nth-child(10) { order:5; top: 0; left: 80%; }
+  .content .contList>li:nth-child(11) { order:9; width: 100%; display: block; }
 
   #vision {  margin-bottom: 10px; }
   #vision .vWrap { width: 50%; }
