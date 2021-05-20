@@ -151,11 +151,32 @@
 
 
 /* submenu */
-.Sub-img { width: 100%; height: 420px; }
+.Sub-img { width: 100%; height: 400px; }
 .Sub-img img { width: 100%; height: 100%; position: relative; }
 .Sub-img h1 { position: absolute; color:#fff; font-size:50px; top: 150px; left: 50%; z-index: 1; transform:translate(-50%) }
 
 .Sub-container { width: 100%; }
-.Sub-container .Sub-content { width: 1480px; margin: 0 auto; }
-.Sub-container .Sub-content h1 { text-align: center; color:#4A4A4A; font-size:40px; margin: 80px 0 30px  0 }
+.Sub-container .Sub-content { width: 100%; margin: 0 auto; }
+.Sub-container .Sub-content .img-company { width: 100%; height: 2000px; background-image: url(../images/회사소개.png); background-position: center; background-repeat: no-repeat;}
+.Sub-container .Sub-content h1 { text-align: center; color:#4A4A4A; font-size:40px; margin: 80px 0 30px 0 }
 .Sub-container .Sub-content h2 { text-align: center; color:#4A4A4A; font-size:20px; margin-bottom: 50px; }
+
+.Sub-container .Sub-content h1 { width:100%; font-size:25px; margin-top: 30px; }
+
+/* company */
+.Sub-container .Sub-content .img-company01 { width: 100%; height: 2000px; background-image: url(../images/회사소개.png); background-position: center; background-repeat: no-repeat; }
+
+/* rental */
+.Sub-container .Sub-content .img-company02 { width: 100%; height: 3000px; background-image: url(../images/음향.png); background-position: center; background-repeat: no-repeat; }
+
+/* portfolio */
+.Sub-container .Sub-content .img-company03 { width: 100%; height: 4300px; background-image: url(../images/윅스뉴스01.png); background-position: center; background-repeat: no-repeat; }
+
+/* news */
+.Sub-container .Sub-content .img-company04 { width: 100%; height: 4750px; background-image: url(../images/윅스뉴스02.png); background-position: center; background-repeat: no-repeat; }
+
+/* partner */
+.Sub-container .Sub-content .img-company05 { width: 100%; height: 500px; background-image: url(../images/파트너.png); background-position: center; background-repeat: no-repeat; }
+
+/* inquiry */
+.Sub-container .Sub-content .img-company06 { width: 100%; height: 650px; background-image: url(../images/렌탈.png); background-position: center; background-repeat: no-repeat; }
