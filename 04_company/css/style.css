@@ -114,22 +114,22 @@
 
 .partner { width: 100%; margin-bottom: 100px; }
 .partner .pWrap { width: 1240px; margin: 0 auto; display:flex; flex-wrap:wrap; position: relative; }
-.partner .pWrap li { width: 25%; height: 310px; text-align: center; padding: 0 20px; position: relative; overflow:hidden; }
+.partner .pWrap li { width: 25%; height: 310px; text-align: center; padding: 0 20px; position: relative; }
 .partner .pWrap h3 { font-size:30px; padding-top:194px; padding-bottom:70px; }
 .partner .pWrap h4 { font-size:20px; padding-top: 50px; padding-bottom: 30px; font-size: 18px; line-height:33px;}
-.partner .pWrap li img { position: absolute; left: 0; width: 100%; height: 100%; transition:.8s; }
+.partner .pWrap li img { position: absolute; left: 0; width: 100%; height: 100%; transition:.8s; z-index: -1; }
 .partner .pWrap li:hover img { transform:scale(1.5) rotate(-3deg); filter: grayscale(0.7);}
 
 .partner .pWrap li:nth-child(1) { font-size:20px; height:620px; line-height:40px; background: #473868 url(../images/partner.png); background-repeat: no-repeat; background-position:50% 84px; color:#fff; }
-.partner .pWrap li:nth-child(2) {  }
+.partner .pWrap li:nth-child(2) { overflow: hidden;}
 .partner .pWrap li:nth-child(3) { background:#EDEDED; position: relative; }
-.partner .pWrap li:nth-child(3):after { content:''; top:100%; left:50%; border:solid transparent; width:0; height:0; position:absolute; border-color:rgba(221,221,221,0); border-top-color:#EDEDED; border-width:15px; margin-left:-15px; z-index:1; }
-.partner .pWrap li:nth-child(4) { }
-.partner .pWrap li:nth-child(5) { background:#EDEDED; position: absolute; left: 310px; bottom: 0; }
-.partner .pWrap li:nth-child(5):after { content:"";  position:absolute; bottom:100%; left:50%; border:solid transparent; width:0; height:0; position:absolute; border-color:rgba(221,221,221,0); border-bottom-color:#ededed; border-width: 15px; margin-left: -15px; }
-.partner .pWrap li:nth-child(6) { position: absolute; left: 620px; bottom: 0;  }
+.partner .pWrap li:nth-child(3):after { content:""; top:100%; left:50%; border:solid transparent; width:0; height:0; position:absolute; border-color:rgba(221,221,221,0); border-top-color:#EDEDED; border-width:15px; margin-left:-15px; z-index:1; }
+.partner .pWrap li:nth-child(4) { overflow: hidden; }
+.partner .pWrap li:nth-child(5) { background:#EDEDED; position: absolute; left: 310px; bottom: 0;z-index: 1;}
+.partner .pWrap li:nth-child(5):after { content:"";  position:absolute; bottom:100%; left:50%; border:solid transparent; width:0; height:0; border-color:rgba(221,221,221,0); border-bottom-color:#ededed; border-width: 15px; margin-left: -15px; }
+.partner .pWrap li:nth-child(6) { position: absolute; left: 620px; bottom: 0; overflow: hidden;}
 .partner .pWrap li:nth-child(7) { background:#EDEDED; position: absolute; right: 0; bottom: 0; }
-.partner .pWrap li:nth-child(7):after { content:"";  position:absolute; bottom:100%; left:50%; border:solid transparent; width:0; height:0; position:absolute; border-color:rgba(221,221,221,0); border-bottom-color:#ededed; border-width: 15px; margin-left: -15px; }
+.partner .pWrap li:nth-child(7):after { content:"";  position:absolute; bottom:100%; left:50%; border:solid transparent; width:0; height:0; border-color:rgba(221,221,221,0); border-bottom-color:#ededed; border-width: 15px; margin-left: -15px; }
 
 .content02 { width: 1240px; margin: 0 auto; margin-bottom: 100px; }
 .content02 li { width: 620px; height: 296px; float: left; color:#3B3B3B; position: relative; overflow: hidden;}
@@ -138,9 +138,8 @@
 .content02 h3 { font-size:30px; position: absolute; margin: 50px; }
 .content02 h3:after { content:""; display:block; width:258px; height: 3px; background:#3B3B3B; margin-top: 15px; margin-bottom: 30px; }
 .content02 p { font-size:20px; position: absolute; margin: 130px  50px; }
-.content02 .btn { font-size:15px; color:#14213D; transition:0.3s; border: none; background:#fff; text-align: center; width: 258px; height: 33px; margin-top: 30px; cursor:pointer; position: absolute; margin: 220px 50px; }
-.content02 li:first-child {}
-.content02 li:last-child { }
+.content02 .btn { font-size:15px; color:#14213D; transition:0.5s; border: none; background:#fff; text-align: center; width: 258px; height: 33px; margin-top: 30px; cursor:pointer; position: absolute; margin: 220px 50px; }
+.content02 .btn:hover { background:#3B3B3B; color:#fff; }
 
 #footer { width: 100%; height: 315px; background:#181A1E; }
 #footer .ft-wrap { width: 1240px; margin: 0 auto; color:#fff; }
