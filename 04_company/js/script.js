@@ -8,6 +8,10 @@ $(document).ready(function(){
     $(this).addClass("on").siblings().removeClass("on");
   });
 
+  $(".Sub-content ul li").click(function(){
+    $(this).addClass("click").siblings().removeClass("click");
+  })
+
   $(".toggleMenu").click(function(){
     const toggle = $(".toggleMenu").attr("class");
     if(toggle == "toggleMenu"){
@@ -33,4 +37,6 @@ $(document).ready(function(){
     innerWidth:700,
     innerHeight:393.75
   });
+
+
 });

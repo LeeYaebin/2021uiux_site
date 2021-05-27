@@ -72,6 +72,8 @@
 
 
   /* mobile */
+  .Sub-container { width: 100%; }
+  .Sub-container .Sub-content li a { padding: 5px; }
   .Sub-img { height: 100%; }
   .Sub-img img { width: 100%; height: 300px; }
   .Sub-img h1 { font-size:35px; }
