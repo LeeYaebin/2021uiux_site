@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+:root {
+  --bgcolor-bro:#511E1E;
+}
+
+.bro { background: var(--bgcolor-bro); }
