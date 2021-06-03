@@ -1,7 +1,80 @@
 @charset "UTF-8";
 
 :root {
-  --bgcolor-bro:#511E1E;
+  --bgcolor-darkgray:#222222;
+  --bgcolor-lightgray:#F7F7F7;
+  --bgcolor-bro:#750519;
+  --bgcolor-white:#fff;
+
+  --color-white:#fff;
+  --color-black:#333;
+  --color-bro:#750519;
 }
 
-.bro { background: var(--bgcolor-bro); }
+.darkgray { background: var(--bgcolor-darkgray); }
+
+
+.btn-outline-gray {
+  color:var(--color-black);
+  transition:0.3s;
+}
+.btn-outline-gray:hover{
+  color: #fff;
+  border-bottom-color: #fff;
+  animation-name: ani-border;
+}
+
+@keyframes ani-border {
+  0% { width: 100%; height: 100%; left: 0; }
+  100% { width: 100%; height: 100%; left: 100%; background: var(--bgcolor-white); }
+}
+
+.content li {
+  color:var(--color-white);
+  position: relative;
+}
+.content img {
+  position: relative;
+}
+
+.content li h1 { font-size:50px; }
+.content li p { font-size:18px; }
+.content li a { color: var(--color-white); font-size:20px; }
+
+.content .slideView1{
+  height:600px;
+  background-image: url(../images/main-img01.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.content .slideView2{
+  height:600px;
+  background-image: url(../images/main-img02.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: 0 none;
+    border: 0 none;
+}
+
+.btn-outline-brown {
+  color:var(--color-black);
+  border-color: #750519;
+}
+.btn-outline-brown:hover{
+  color: #fff;
+  background-color: #750519;
+  border-color: #750519;
+}
+.brown {
+  color: var(--color-bro)
+}
+.bg-gray {
+  background: var(--bgcolor-lightgray);
+}
