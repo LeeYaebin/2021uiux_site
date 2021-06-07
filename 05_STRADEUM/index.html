@@ -18,10 +18,10 @@
   <title>stradeum</title>
 </head>
 <body>
-  <div class="darkgray">
+  <div class="darkgray headerWrap">
     <div class="container px-0">
       <div class="navbar navbar-expand-lg navbar-dark">
-        <a href="#" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
           <img src="images/logo.webp" alt="">
         </a>
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,12 +53,10 @@
       </div>
     </div>
   </div>
-  <style>
 
-  </style>
   <div class="content">
     <ul class="slide">
-      <li class="py-5 slideView1">
+      <li class="py-5 slideView1 hvr-underline-from-left">
         <div class="container py-5">
           <div class="col-md-6 align-self-center text-center text-md-left order-2 mt-5">
             <h1 class="mb-4">STAGE 30</h1>
@@ -67,7 +65,7 @@
           </div>
         </div>
       </li>
-      <li class="py-5 slideView2">
+      <li class="py-5 slideView2 hvr-underline-from-left">
         <div class="container py-5">
           <div class="col-md-6 align-self-center text-center text-md-left order-2 mt-5">
             <h1 class="mb-4">CLASSIC 30</h1>
@@ -80,14 +78,14 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 align-self-center text-center text-md-left">
+      <div class="col-md-6 align-self-center text-center text-md-left order-2 order-md-1">
         <p class="brown mb-0">#_스타라디움은 회원제 입니다.</p>
         <h2 class="mb-4">MEMBERSHIP</h2>
         <p class="mb-0">members 매혹적인회원 300명</p>
         <p class="mb-4">policy 프라이버시 스마일 애티튜드</p>
         <div class="btn button secondary-button btn-outline-brown px-4">더보기</div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 order-1 order-md-2 mb-3 mb-md-0">
         <img src="images/img01.webp" alt="" class="img-wrap">
       </div>
     </div>
@@ -102,7 +100,7 @@
           <p class="mb-4">music 하우스 월드뮤직 재즈 클래식 플라멩코…</p>
           <div class="btn button secondary-button btn-outline-brown px-4">더보기</div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 order-md-1">
           <img src="images/img02.webp" alt="">
         </div>
       </div>
@@ -197,5 +195,21 @@
         <p class="text-center py-5 m-auto">Copyright © 2020 STRADEUM ALL Rights Reserved.</p>
     </div>
   </footer>
+  <script>
+      const navOffset = $(".headerWrap").height()+100;
+
+      $(window).scroll(function(){
+        hScroll();
+      });
+      function hScroll(){
+        let scroll = $(window).scrollTop();
+        if(navOffset < scroll){
+          $(".headerWrap").addClass("fixed-top");
+        }else{
+          $(".headerWrap").removeClass("fixed-top");
+        }
+      }
+      hScroll();
+</script>
 </body>
 </html>
