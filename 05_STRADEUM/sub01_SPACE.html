@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/script.js"></script>
+  <title>stradeum</title>
+</head>
+<body>
+  <div class="darkgray headerWrap">
+    <div class="container px-0">
+      <div class="navbar navbar-expand-lg navbar-dark">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.webp" alt="">
+        </a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                스타라디움소개
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="sub01_IDENTITY.html">IDENTITY</a>
+                <a class="dropdown-item" href="sub01_SPACE.html">SPACE</a>
+            </li>
+            <li class="nav-item">
+              <a href="sub02_큐레이션.html" class="nav-link">큐레이션</a>
+            </li>
+            <li class="nav-item">
+              <a href="sub03_MEMBERSHIP.html" class="nav-link">멤버십가입</a>
+            </li>
+            <li class="nav-item">
+              <a href="sub04_PROGRAM.html" class="nav-link">프로그램</a>
+            </li>
+            <li class="nav-item">
+              <a href="sub05_GALLERY.html" class="nav-link">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a href="sub06_LEASE.html" class="nav-link">대관</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub_main py-5">
+    <h1 class="text-center col-white">SPACE</h1>
+  </div>
+
+
+
+
+
+
+  <footer id="footer">
+    <div class="container py-5">
+        <div class="footer-wrap m-auto">
+
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <p>스트라디움
+                <span>서울 용산구 이태원로 251(한남동 739-13), 2F~4F</span>
+                <span>대표자 이기영 02-3019-7500</span>
+                <span>사업자 등록번호 241-86-29288</span></p>
+              </div>
+            </div>
+        </div>
+        <!-- <p class="text-center py-5 m-auto">스트라디움  I  서울 용산구 이태원로 251(한남동 739-13), 2F~4F  I  대표자  이기영 I  02-3019-7500  I  사업자등록번 214-86-29288</p> -->
+        <p class="text-center pt-5 m-auto">Copyright © 2020 STRADEUM ALL Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+      const navOffset = $(".headerWrap").height()+100;
+
+      $(window).scroll(function(){
+        hScroll();
+      });
+      function hScroll(){
+        let scroll = $(window).scrollTop();
+        if(navOffset < scroll){
+          $(".headerWrap").addClass("fixed-top");
+        }else{
+          $(".headerWrap").removeClass("fixed-top");
+        }
+      }
+      hScroll();
+</script>
+</body>
+</html>

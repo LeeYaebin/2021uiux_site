@@ -54,10 +54,6 @@
     border: 0 none;
 }
 
-.img-wrap {
-  margin-left: 65px;
-}
-
 .btn-outline-brown {
   color:var(--color-black);
   border-color: #750519;
@@ -116,3 +112,11 @@
   background: var(--bgcolor-lightgray);
 }
 #footer .row p span { margin-left: 10px;}
+
+
+.sub_main {
+  background: #0e0e0e;
+}
+.col-white {
+  color:var(--color-white);
+}
