@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fullpage").fullpage({
+                menu:".topMenu",
+                anchors:['m1st','m2st','m3st','m4st','m5st'],
+                navigation:true,
+                navigationTooltips:['home','product','communite','board','footer'],
+                showActiveTooltip:true,
+                responsiveWidth: 1000,
+                afterLoad:function(anchorslink,index){
+                  console.log(anchorslink+ ', '+ index);
+                  if(index == 1){
+                    $(".txt1st").addClass("end");
+                  }else{
+                    $(".txt1st").removeClass("end");
+                  }
+                }
+
+            });
+            $("#navTop")
+        })
+    </script>
+    <style>
+        .section {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section.page1 { background-image: url(images/bg1.jpg); }
+        .section.page2 { background-image: url(images/bg2.jpg); }
+        .section.page3 { background-image: url(images/bg3.jpg); }
+        .section.page4 { background-image: url(images/bg4.jpg); }
+        #fp-nav.right { right: 10px; }
+        .fp-tooltip.right { right: 20px; }
+        #fp-nav ul li a span, .fp-slidesNav ul li a span { background: #961938; }
+
+        .txt1st { opacity: 0; transition:0.3s; transform:translateX(-300px) }
+        .txt1st.end { opacity: 1; transform:translateX(0) }
+        .scroll {
+          position: absolute; bottom: 0;
+          left: 50%; transform:translateX(-50%);
+          animation-name: xScroll;
+          animation-duration: 0.8s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        @keyframes xScroll {
+          from { bottom: 30px; }
+          to { bottom: 50px; }
+        }
+
+        @media screen and (max-width:1000px){
+          .navbar li.active { border-bottom: 5px solid transparent; }
+          .txt1st { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navTop">
+    <a class="navbar-brand" href="#">LOGO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav topMenu ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#m1st">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#m2st">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#m3st">Community</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#m4st">Board</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div id="fullpage">
+      <div class="section page1" data-anchor="m1st">
+        <div class="container">
+          <div class="txt1st">
+            <h3>Lorem ipsum.</h3>
+            <p>Lorem ipsum dolor sit.</p>
+            <a href="" class="btn btn-primary">more</a>
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="#m2st"><img src="images/btn_scroll.png" alt=""></a>
+        </div>
+      </div>
+        <div class="section page2" data-anchor="m2st">2</div>
+        <div class="section page3" data-anchor="m3st">3</div>
+        <div class="section page4" data-anchor="m4st">4</div>
+        <div class="section page5 fp-auto-height py-3 bg-dark text-white text-center" data-anchor="m5st">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, excepturi!
+        </div>
+    </div>
+</body>
+</html>

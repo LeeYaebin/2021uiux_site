@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-  --bgcolor-darkgray:#222222;
+  --bgcolor-darkgray:#030303;
   --bgcolor-lightgray:#F7F7F7;
   --bgcolor-bro:#750519;
   --bgcolor-white:#fff;
@@ -109,14 +109,19 @@
 
 
 #footer {
-  background: var(--bgcolor-lightgray);
+  background: var(--bgcolor-darkgray);
 }
-#footer .row p span { margin-left: 10px;}
+#footer .row p span {
+  margin-left: 10px;
+}
 
 
 .sub_main {
-  background: #0e0e0e;
+  background: var(--bgcolor-darkgray);
 }
 .col-white {
   color:var(--color-white);
+}
+.sub-page {
+  background: var(--bgcolor-darkgray);
 }
