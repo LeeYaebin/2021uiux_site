@@ -1,0 +1,28 @@
+@charset "utf-8"
+
+body {
+  background-color: #fff;
+  color:222328;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #222328;
+  text-decoration: none;
+}
+a:link,a:visited {
+  content:""; display:block;
+}
+.headerWrap {
+  width: 1140px; margin: 0 auto; clear:both;
+  background: #c7c8b6;
+}
+
+.logo {
+  float: left;
+  width: 200px; height: 40px;
+  background: #ffe6e6;
+}
+
+.header li { float: left;}
