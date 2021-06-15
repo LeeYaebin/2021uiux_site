@@ -125,3 +125,7 @@
 .sub-page {
   background: var(--bgcolor-darkgray);
 }
+
+@media screen and ( max-width:776px){
+  .sub-page img { width: 100%; }
+}
