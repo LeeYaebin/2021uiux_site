@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@media screen and ( max-width:700px){
+    header { width: 100%; position: relative; }
+    .headerWrap { width: 100%; }
+    .headerTop { width: 100%; }
+    .headerWrap h1 { width: 150px; top: 0; left: 20px; position: absolute; margin-top: -10px; }
+    .headerWrap h1 img { width: 150px; }
+    .headerWrap nav { display: none; }
+    .headerWrap .toggleMenu { display: block; background: #333;}
+
+
+    .sliderWrap { display: none; }
+    .content { display: none; }
+    .banner { display: none; }
+    .magarwrap { display: none; }
+    .container { display: none; }
+}
