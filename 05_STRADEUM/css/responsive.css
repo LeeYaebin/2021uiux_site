@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@media screen and ( max-width:700px){
+  body {  }
+  #headerTop { width: 100%; top: 0; transform:initial; position: absolute; left: 0; }
+  #headerTop .toggleMenu { display:block; }
+  #headerTop .logo { position: absolute; left:20px; top: 20px; }
+  #headerTop .logo a { z-index: 1; position: fixed; }
+  .suv_menu { display:none; }
+
+  #headerTop .toggleMenu {
+    position: fixed; z-index: 1;
+  }
+  #main_menu {
+    position: fixed; width: 100%; height: 100%;
+    background:#fff; left: -100%; top: 0;
+    background: #181818;
+  }
+  #main_menu ul { position: absolute; left: 0; top: 100px; width: 100%; }
+  #main_menu li a { width: 100%; text-align: left; }
+  .topNav li { height: 80px; float: initial !important; border-bottom: 2px solid #424242; display:flex; justify-content: center; align-items: center; }
+  #main_menu li:hover { background: #2a2a2a; border-top: 0 none;  }
+  #main_menu li a:after { display:none; }
+
+  .sliderWrap .slider_txt h3 { font-size:40px; margin-bottom:30px; }
+  .sliderWrap .slider_txt p { font-size:15px; }
+
+  .content { height: 100%;  margin-bottom: 10px; }
+  .content .contList { top: 0; width: 100%;}
+  .content .contList>li { width: 20%; height: 280px; }
+  .content .contList>li:hover { transform:none; }
+  .content .contList>li p { font-size:0.8rem; transition:0.5s; }
+  .content .contList>li:hover p { font-size:0.9rem; }
+
+  .content .contList>li:nth-child(1) { order:1; }
+  .content .contList>li:nth-child(2) { display:none; }
+  .content .contList>li:nth-child(3) { display: none; margin-top: 10px; }
+  .content .contList>li:nth-child(4) { order:2;}
+  .content .contList>li:nth-child(5) { order:3; }
+  .content .contList>li:nth-child(6) { order:7; width: 100%; display: block; margin-top: 10px; }
+  .content .contList>li:nth-child(7) { order:10; width: 100%; display: block; }
+  .content .contList>li:nth-child(8) { order:8; width: 100%; display: block; }
+  .content .contList>li:nth-child(9) { order:4; }
+  .content .contList>li:nth-child(10) { order:5; top: 0; left: 80%; }
+  .content .contList>li:nth-child(11) { order:9; width: 100%; display: block; }
+
+  #vision {  margin-bottom: 10px; }
+  #vision .vWrap { width: 50%; }
+  #vision .vWrap li { width: 180%; height: 150px; position: relative; left: -45%; margin-left: 30px; }
+  #vision .vWrap li img { position: absolute; left: 0;  }
+  #vision .vWrap .card_body { position: absolute; left: 110px; }
+  #vision .vWrap h1 { font-size:30px; padding: 20px 0; }
+  #vision .vWrap h3 { font-size:20px; padding: 0; text-align:left; }
+  #vision .vWrap p { font-size:15px; text-align: left;}
+
+
+  .partner { margin-bottom: 10px; }
+  .partner .pWrap { display:none; }
+
+
+  .content02 { width: 100%; margin-bottom: 10px; }
+  .content02 li { width: 100%; }
+  .content02 li img{ width: 100%; }
+
+
+  #footer { width: 100%; height: 400px; }
+  #footer .ft-wrap { width: 100%; }
+  #footer .ft-wrap li { width: 100%; font-size:0.9rem; text-align: center; }
+  #footer .ft-wrap li:first-child { background-position:50%  10px; }
+  #footer .ft-wrap li h1 { font-size:25px; }
+  #footer .ft-wrap li p { font-size:15px; line-height:23px; }
+
+
+  /* mobile */
+  .Sub-container { width: 100%; }
+  .Sub-container .Sub-content li a { padding: 5px; }
+  .Sub-img { height: 100%; }
+  .Sub-img img { width: 100%; height: 300px; }
+  .Sub-img h1 { font-size:35px; }
+
+  .Sub-container .Sub-content h1 { width:100%; font-size:25px; margin-top: 30px; }
+
+  /* company */
+  .Sub-container .Sub-content .img-company01 { width: 100%; height: 1200px; background-image: url(../images/mob_company.png); background-position: center; background-repeat: no-repeat; }
+
+  /* rental */
+  .Sub-container .Sub-content .img-company02 { width: 100%; height: 2550px; background-image: url(../images/mob_음향.png); background-position: center; background-repeat: no-repeat; }
+
+  /* portfolio */
+  .Sub-container .Sub-content .img-company03 { width: 100%; height: 2500px; background-image: url(../images/mob_윅스뉴스01.png); background-position: center; background-repeat: no-repeat; }
+
+  /* news */
+  .Sub-container .Sub-content .img-company04 { width: 100%; height: 4200px; background-image: url(../images/mob_윅스뉴스02.png); background-position: center; background-repeat: no-repeat; }
+
+  /* partner */
+  .Sub-container .Sub-content .img-company05 { width: 100%; height: 500px; background-image: url(../images/mob_파트너.png); background-position: center; background-repeat: no-repeat; }
+
+  /* inquiry */
+  .Sub-container .Sub-content .img-company06 { width: 100%; height: 600px; background-image: url(../images/mob_렌탈견적문의.png); background-position: center; background-repeat: no-repeat; }
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media screen and ( max-width:700px){
+    #headerTop { width: 100%; top: 0; transform:initial; position:absolute; left: 0; }
+    #headerTop .toggleMenu { display: block; }
+    #headerTop .logo { position: absolute; left: 20px; top: 20px; }
+    #headerTop .logo a { z-index:1; position: fixed; }
+    
+    
+    
+}
