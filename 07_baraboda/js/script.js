@@ -1,11 +1,12 @@
 $(document).ready(function(){
 
     $("nav >ul >li").mouseover(function(){
-        $(".submenu").stop().slideDown();
+      $(this).find(".submenu").stop().slideDown();
     });
     $("nav >ul >li").mouseout(function(){
-        $(".submenu").stop().slideUp();
+      $(this).find(".submenu").stop().slideUp();
     });
+
 
    var slide = 0;
 
@@ -18,18 +19,18 @@ $(document).ready(function(){
        $(".slider >li").eq(slide).siblings().fadeOut();
        $(".slider >li").eq(slide).fadeIn();
    },5000);
-    
+
    $(".toggleMenu").click(function(){
     const toggle = $(".toggleMenu").attr("class");
     if(toggle == "toggleMenu"){
     $(".toggleMenu").addClass("change");
+    $("nav").stop().animate({right:"0"},500);
     //$("#myTopMenu").css("left",0);
-    $("#main_menu").stop().animate({left:0});
 
   }else{
     $(".toggleMenu").removeClass("change");
     //$("#myTopMenu").css("left","-100%");
-    $("#main_menu").stop().animate({left:"-100%"});
+    $("nav").stop().animate({right:"-80%"});
   }
   });
 
@@ -58,5 +59,5 @@ $(document).ready(function(){
     $(paths.get(i)).animate({"strokeDashoffset":0},8000)
   };
 
-    
+
 });

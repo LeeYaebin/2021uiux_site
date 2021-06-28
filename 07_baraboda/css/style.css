@@ -7,23 +7,18 @@ header .headerTop {
   width: 1240px; height: 100px; position: fixed;
   z-index:20; line-height: 100px;
   left: 50%; transform:translateX(-50%);
-  
+
 }
 .headerTop h1 { float: left; width: 200px; margin-top: 20px; }
 
-nav { float: right; width: 600px; height: 50px; line-height:50px; margin-top: 50px; }
+nav { float: right; width: 600px;  margin-top: 50px; }
 nav >ul { width: 100%; z-index:20; text-align: center; }
-nav >ul >li { float: left; width: calc(100% /4); }
-nav >ul >li >a { display: block; transition:0.3s; color:#563434; }
-nav >ul >li:hover >a { color:#f12121; background: #fff; border-radius: 20px 20px 0 0 ;}
-/* nav >ul >li:after >a {  }
-nav ul >li:after:hover >a { } */
-/* nav >li a:after { content:""; display:block; border-bottom:1px solid #fff; transform:scaleX(0); transition:0.2s ease-in-out; }
-nav >li a:hover:after { transform:scaleX(1); } */
-
-nav >ul> li>.submenu { display: none; background: #ffffff; height: 150px; }
-nav >ul> li>.submenu >li { height: 50px; line-height:50px; }
-nav >ul> li>.submenu >li >a{ display: block; transition:0.3s; }
+nav >ul >li { float: left; width: calc(100% /4);  }
+nav >ul >li >a { width: 100%; height: 50px; line-height:50px; display: block; transition:0.3s; color:#563434; }
+nav >ul >li:hover >a { color:#f12121; background: #fff; }
+nav >ul> li>.submenu { display: none; width: 100%; height: 150px; background: #ffffff;  }
+nav >ul> li>.submenu >li { width: 100%; height: 50px; line-height:50px; }
+nav >ul> li>.submenu >li >a{ width: 100%; display: block; transition:0.3s; }
 nav >ul> li>.submenu >li:hover >a{ background: #e7e2dc; }
 
 
@@ -99,7 +94,6 @@ nav >ul> li>.submenu >li:hover >a{ background: #e7e2dc; }
 .content { width: 100%; }
 .content .contList { width: 1240px; margin: 0 auto; display:flex; flex-wrap:wrap; position: relative; top: -110px; }
 .content .contList li { width: 25%; height: 310px; transition:0.3s; text-align: center; padding-top: 200px; color:#fff; }
-.content .contList .youtube { width: 2000px; height: 1300px; }
 
 .content .contList>li:nth-child(1) { background-image: url(../images/cont01.png); background-size: cover; background-repeat: no-repeat; background-position: center; position: relative;  }
 .content .contList>li:nth-child(1) .img1 { position: absolute; left: 50%; top: 40%; transform:translate(-50%,-50%); background-image: url(../images/img1.png); background-size: cover; background-repeat: no-repeat; width: 60px; height: 60px; }
@@ -177,5 +171,4 @@ nav >ul> li>.submenu >li:hover >a{ background: #e7e2dc; }
 
 
 .subpage { width: 1240px; margin: 0 auto; }
-.subpage img { max-width:100%; } 
-
+.subpage img { max-width:100%; }
