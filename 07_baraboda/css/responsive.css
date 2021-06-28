@@ -45,7 +45,8 @@
 
 
     .magarwrap { width: 100%; }
-    .magarwrap div:nth-child(2n) { margin-left: 20px; }
+    .magarwrap div { width: 100%; }
+    .magarwrap div+div { margin-top: 30px; }
 
 
 
